@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo Enter hadoop version to download
+
+read ver
+
+echo Downloading Hadoop
+wget -P /usr/ http://mirrors.ucr.ac.cr/apache/hadoop/common/hadoop-"$ver"/hadoop-"$ver".tar.gz
+
+echo Decompressing file
+tar xzf /usr/hadoop-"$ver".tar.gz -C /usr/
+
+echo Renaming Hadoop directory
+mv /usr/hadoop-"$ver" /usr/hadoop
+
+echo Changing ownership of hadoop folder
+chown -R $SUDO_USER /usr/hadoop
