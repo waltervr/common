@@ -1,13 +1,13 @@
 #!/bin/bash
 echo Downloading required files
 
-wget --user=osboxes --password=123456abC http://artifactory.avantica.avanticatec.net/artifactory/BigDataTesting/HadoopScripts/1_remove-install-java -P ~/HadoopScripts
-wget --user=osboxes --password=123456abC http://artifactory.avantica.avanticatec.net/artifactory/BigDataTesting/HadoopScripts/2_remove-install-ssh -P ~/HadoopScripts
-wget --user=osboxes --password=123456abC http://artifactory.avantica.avanticatec.net/artifactory/BigDataTesting/HadoopScripts/3_download-hadoop -P ~/HadoopScripts
-wget --user=osboxes --password=123456abC http://artifactory.avantica.avanticatec.net/artifactory/BigDataTesting/HadoopScripts/4_create-dirs -P ~/HadoopScripts
-wget --user=osboxes --password=123456abC http://artifactory.avantica.avanticatec.net/artifactory/BigDataTesting/HadoopScripts/5_set-variables -P ~/HadoopScripts
-wget --user=osboxes --password=123456abC http://artifactory.avantica.avanticatec.net/artifactory/BigDataTesting/HadoopScripts/6_edit-bash -P ~/HadoopScripts
-wget --user=osboxes --password=123456abC http://artifactory.avantica.avanticatec.net/artifactory/BigDataTesting/HadoopScripts/7_conf-mapr -P ~/HadoopScripts
-wget --user=osboxes --password=123456abC http://artifactory.avantica.avanticatec.net/artifactory/BigDataTesting/HadoopScripts/8_xml_configs -P ~/HadoopScripts
+wget https://waltervr.github.io/common/HadoopScripts/1_remove-install-java -P ~/HadoopScripts
+wget https://waltervr.github.io/common/HadoopScripts/2_remove-install-ssh -P ~/HadoopScripts
+wget https://waltervr.github.io/common/HadoopScripts/3_download-hadoop -P ~/HadoopScripts
+wget https://waltervr.github.io/common/HadoopScripts/4_create-dirs -P ~/HadoopScripts
+wget https://waltervr.github.io/common/HadoopScripts/5_set-variables -P ~/HadoopScripts
+wget https://waltervr.github.io/common/HadoopScripts/6_edit-bash -P ~/HadoopScripts
+wget https://waltervr.github.io/common/HadoopScripts/7_conf-mapr -P ~/HadoopScripts
+wget https://waltervr.github.io/common/HadoopScripts/8_xml_configs -P ~/HadoopScripts
 
 echo Done
