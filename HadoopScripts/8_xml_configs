@@ -1,0 +1,21 @@
+#!/bin/bash
+
+var_hadoop=/usr/hadoop
+
+echo Creating a copy of core-site file
+mv $var_hadoop/etc/hadoop/core-site.xml $var_hadoop/etc/hadoop/core-site.xml.template
+
+echo Downloading core-site file
+wget -P $var_hadoop/etc/hadoop/ wget https://waltervr.github.io/common/HadoopConfig/core-site.xml
+
+echo Creating a copy of mapred-site file
+mv $var_hadoop/etc/hadoop/mapred-site.xml $var_hadoop/etc/hadoop/mapred-site.xml.template
+
+echo Downloading mapred-site file
+wget -P $var_hadoop/etc/hadoop/ wget https://waltervr.github.io/common/HadoopConfig/mapred-site.xml
+
+echo Creating a copy of mapred-site file
+mv $var_hadoop/etc/hadoop/hdfs-site.xml $var_hadoop/etc/hadoop/hdfs-site.xml.template
+
+echo Downloading hdfs-site file
+wget -P $var_hadoop/etc/hadoop/ wget https://waltervr.github.io/common/HadoopConfig/hdfs-site.xml
