@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo Removing previous versions of JAVA
+apt-get purge openjdk-\*
+
+echo Installing JAVA
+apt-get install openjdk-8-jdk
