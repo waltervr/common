@@ -1,0 +1,15 @@
+#!/bin/bash
+
+var_java=/usr/lib/jvm/java-8-openjdk-amd64
+
+org_java="\# export JAVA_HOME="
+dest_java="export JAVA_HOME=$var_java"
+
+echo Updating JAVA_HOME in hadoop-env.sh file
+sed -i 's@'"$org_java"'@'"$dest_java"'@g' /usr/hadoop/etc/hadoop/hadoop-env.sh
+
+org_hadoop="\# export HADOOP_HOME="
+dest_hadoop="export HADOOP_HOME=/usr/hadoop"
+
+echo Updating HADOOP_HOME in hadoop-env.sh file
+sed -i 's@'"$org_hadoop"'@'"$dest_hadoop"'@g' /usr/hadoop/etc/hadoop/hadoop-env.sh
