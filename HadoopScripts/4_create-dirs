@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo Creating hadoop tmp folder
+mkdir -p /app/hadoop/tmp
+
+echo Changing permissions of tmp folder
+chmod 750 /app/hadoop/tmp
+
+echo Creating hdfs folder
+mkdir -p /home/hdfs
+
+echo Changing permissions of hdfs folder
+chmod 750 /home/hdfs
+
+echo Changing ownership of app folder
+chown -R $SUDO_USER /app
+
+echo Changing ownership of hdfs folder
+chown -R $SUDO_USER /home/hdfs
