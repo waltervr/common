@@ -13,7 +13,7 @@ echo Changing permissions of hdfs folder
 chmod 750 /home/hdfs
 
 echo Changing ownership of app folder
-chown -R $SUDO_USER /app
+chown -R $USER /app
 
 echo Changing ownership of hdfs folder
-chown -R $SUDO_USER /home/hdfs
+chown -R $USER /home/hdfs
