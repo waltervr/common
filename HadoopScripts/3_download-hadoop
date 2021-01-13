@@ -14,4 +14,4 @@ echo Renaming Hadoop directory
 mv /usr/hadoop-"$ver" /usr/hadoop
 
 echo Changing ownership of hadoop folder
-chown -R $USER /usr/hadoop
+chown -R $SUDO_USER /usr/hadoop
